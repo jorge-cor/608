@@ -3,4 +3,4 @@ def func1():
 print(func1())
 
 v1,v2=func1()
-print(v1,_)
+print(v1,v2)
