@@ -132,7 +132,5 @@ else:
 print("\n--- Relatório Final ---")
 print(f"Peso total pescado: {peso} Kg")
 print(f"Excesso de peso:   {excesso} Kg")
-print(f"Valor da Multa:    € {multa}")
-
-
+print(f"Valor da Multa:  € {multa}")
 
