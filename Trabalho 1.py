@@ -89,7 +89,7 @@ print(f"11.1) O produto do dobro de {nume1} com metade de {nume2} é: {calc_a}")
 calc_b = (3 * nume1) + nume3
 print(f"11.2) A soma do triplo de {nume1} com {nume3} é: {calc_b}")
 
-calc_c = num3_real ** 3
+calc_c = nume3 ** 3
 print(f"11.3) O número {nume3} elevado ao cubo é: {calc_c}")
 
 #-----------------------------12-----------------------------------------------------------
@@ -115,5 +115,24 @@ else:
     print(f"\nErro: Género inválido. Respondeu '{genero}', mas era esperado 'H', 'M', 'MULHER' ou 'HOMEM'.\n.")
 
 #--------------------------------14-------------------------------------------------------------------------------
+
+print("--- Controle de Rendimento Diário: Pesca ---")
+
+peso = float(input("Digite o peso de peixes pescado (em Kg): "))
+LIMITE = 50
+MULTA = 4.00
+if peso > LIMITE:
+    excesso = peso - LIMITE
+    multa = excesso * MULTA
+    print("Atenção: O limite foi excedido.")
+else:
+    excesso = 0
+    multa = 0
+    print("Situação regular: Dentro do limite permitido.")
+print("\n--- Relatório Final ---")
+print(f"Peso total pescado: {peso} Kg")
+print(f"Excesso de peso:   {excesso} Kg")
+print(f"Valor da Multa:    € {multa}")
+
 
 
