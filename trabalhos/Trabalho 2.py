@@ -277,7 +277,7 @@ while True:
 
 
 # EX 13
-
+print(f"-" * 20, "Validar inputs " ,"-" * 20)
 idade = -1
 salario = -1
 sexo = "A"
@@ -310,7 +310,7 @@ print(f"*"*20,"resumo","*"*20)
 print(f"\nNome: {nome};\nIdade: {idade} anos;\nSalário: {salario} €;\nSexo: {sexo};\nEstado Civil: {civil};\n")
 
 # EX 14
-
+print(f"-" * 20, "Densidade populacional " ,"-" * 20)
 populacao_a = 80000
 taxa_a = 0.03
 populacao_b = 200000
@@ -330,7 +330,7 @@ print("-" * 60)
 
 
 # EX 15
-
+print(f"-" * 20, "Densidade populacional a pedido" ,"-" * 20)
 populacao_1 = int(input("introduza a quantidade da população do pais A :\n"))
 taxa_1 = float(input("introduza a taxa de crichimento do pais A :\n"))
 populacao_2 = int(input("introduza a quantidade da população do pais B :\n"))
@@ -371,6 +371,7 @@ print("-" * 60)
 
 # EX 16
 # EX 16.1
+print(f"-" * 20, "Numeros de 1 a 20" ,"-" * 20)
 anum=0
 
 while anum < 20:
@@ -378,6 +379,7 @@ while anum < 20:
     print(anum)
 
 # EX 16.2
+print(f"-" * 20, "Numeros de 1 a 20 seguidos" ,"-" * 20)
 anum=0
 
 while anum < 20:
@@ -385,6 +387,7 @@ while anum < 20:
     print(anum,end=" ")
 
 # EX 17
+print(f"-" * 20, "O maior" ,"-" * 20)
 pnum=0
 maximo=0
 
@@ -395,9 +398,12 @@ while pnum < 5:
         maximo = numero
 print(f"O numero maior e {maximo}")
 
-"""
-# EX 18
 
+# EX 18
+print(f"-" * 20, "Media mais soma" ,"-" * 20)
+pnum=0
+soma=0
+while pnum < 5:
 pnum=0
 soma=0
 media=0
@@ -407,3 +413,111 @@ while pnum < 5:
     soma=soma + numero
     media = soma/pnum
 print(f"A soma e {soma} e a media e {media}")
+
+
+# EX 19
+print(f"-" * 20, "Ímpares" ,"-" * 20)
+adicional=0
+print("numeros ípmares:")
+while adicional < 50:
+    adicional = adicional + 1
+    if adicional % 2 != 0:
+        print(adicional, end=", ")
+print("\nFIM...")
+
+
+
+# EX 20
+
+print(f"-" * 20, "intervalo" ,"-" * 20)
+
+prim_num=int(input("Insira o primeiro numero"))
+segu_num=int(input("Insira o segundo numero"))
+inicio=min(prim_num,segu_num)
+fim=max(prim_num,segu_num)
+print(f"os numeros no intrevalo entre {inicio} e {fim} são: ")
+for i in range(inicio,fim):
+    print(i)
+
+# EX 21
+
+print(f"-" * 20, "Leitura de 5 números" ,"-" * 20)
+
+vetor=[]
+
+for i in range(5):
+    numero=int(input(f"Introduza o {i+1} numero inteiro:"))
+    vetor.append(numero)
+print(vetor)
+
+
+# EX 22
+
+print(f"-" * 20, "Leitura de 10 números ordem reversa" ,"-" * 20)
+
+vetor=[]
+
+for i in range(10):
+    numero=float(input(f"Introduza o {i+1} numero :"))
+    vetor.append(numero)
+print(vetor[::-1])
+
+# EX 23
+
+print(f"-" * 20, "Notas e media" ,"-" * 20)
+
+notas=[]
+media=0
+soma=0
+for i in range(4):
+    valor=float(input(f"Introduza a {i+1}ª nota:"))
+    notas.append(valor)
+for va in notas:
+    soma = soma + va
+    media = soma/4
+print(f"O aluno teve as seguintes notas:\n {notas}")
+print(f"Com uma media das notas de: {media}")
+
+# EX 24
+
+print(f"-" * 20, "Verificar consoantes" ,"-" * 20)
+
+vetor=[]
+consoantes=[]
+total=0
+for i in range(10):
+    while True:
+        char = input(f"Introduza o {i + 1}º caractere: ").strip().lower()
+        if len(char) == 1 :
+            vetor.append(char)
+            break
+        else:
+            print ("Entrada invalida. Por favor, insira apenas um único caractere")
+for caractere in vetor :
+    if caractere not in "aeiou":
+        consoantes.append(caractere)
+total = len(consoantes)
+
+print(f"-" * 20, "Resultado" ,"-" * 20)
+print(f"Foram lidas **{total}** consoantes.")
+print(f"As consoantes encontradas são: {consoantes}")
+
+"""
+
+# EX 25
+
+print(f"-" * 20, "Verificar consoantes" ,"-" * 20)
+
+vetor=[]
+vetor_par=[]
+vetor_impar=[]
+for i in range(20):
+    numero=int(input(f"Introduza o {i+1} numero:"))
+    vetor.append(numero)
+    if numero % 2 != 0:
+        vetor_impar.append(numero)
+    else:
+        vetor_par.append(numero)
+
+print(f"-" * 20, "Resultado" ,"-" * 20)
+print(f"na lista vetor)
