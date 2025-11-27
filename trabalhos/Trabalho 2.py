@@ -502,11 +502,11 @@ print(f"-" * 20, "Resultado" ,"-" * 20)
 print(f"Foram lidas **{total}** consoantes.")
 print(f"As consoantes encontradas são: {consoantes}")
 
-"""
+
 
 # EX 25
 
-print(f"-" * 20, "Verificar consoantes" ,"-" * 20)
+print(f"-" * 20, "Verificar Pares ou impares" ,"-" * 20)
 
 vetor=[]
 vetor_par=[]
@@ -520,4 +520,57 @@ for i in range(20):
         vetor_par.append(numero)
 
 print(f"-" * 20, "Resultado" ,"-" * 20)
-print(f"na lista vetor)
+print(f"na lista:\n{vetor}\nOs pares sao: \n{vetor_par}\nE os impares sao \n{vetor_impar}")
+
+
+
+# EX 26
+
+medias = []
+alunos_com_boa_media = 0
+print(f"-" * 20, "Verificar medias " ,"-" * 20)
+
+for i in range(10):
+    print(f"\n--- Aluno {i + 1} ---")
+    soma_notas = 0
+
+    for j in range(4):
+        nota = float(input(f"Insira a {j + 1}ª nota: "))
+        soma_notas += nota
+
+    media = soma_notas / 4
+    medias.append(media)
+
+for media in medias:
+    if media >= 7.0:
+        alunos_com_boa_media += 1
+
+print(f"-" * 20, "Resultado" ,"-" * 20)
+print(f"Número de alunos com média maior ou igual a 7.0: {alunos_com_boa_media}")
+
+
+
+# EX 27
+
+numeros = []
+
+print(f"-" * 20, "Soma e multiplicação " ,"-" * 20)
+
+print("Insira 5 números inteiros:")
+for i in range(5):
+    num = int(input(f"Digite o {i+1}º número: "))
+    numeros.append(num)
+
+soma = 0
+multiplicacao = 1
+
+for numero in numeros:
+    soma += numero
+    multiplicacao *= numero
+
+print(f"-" * 20, "Resultado" ,"-" * 20)
+print(f"Números lidos: {numeros}")
+print(f"Soma dos números: {soma}")
+print(f"Multiplicação dos números: {multiplicacao}")
+
+"""
