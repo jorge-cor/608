@@ -574,3 +574,4 @@ print(f"Soma dos números: {soma}")
 print(f"Multiplicação dos números: {multiplicacao}")
 
 """
+in=0
