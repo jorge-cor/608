@@ -1,0 +1,4 @@
+linha 1
+esta e a linha 2
+Ola mundo da linha 3
+Ultima linha 4 do nosso ficheiro
